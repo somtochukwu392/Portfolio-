@@ -28,11 +28,12 @@ a {
   width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  padding: 16px 6%;
+  padding: 16px 4%;
 }
 
 .navbar-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -63,9 +64,9 @@ a {
 
 /* GENERAL CONTAINER */
 .container {
-  width: 92%;
-  max-width: 1200px;
-  margin: auto;
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* HERO */
@@ -75,6 +76,7 @@ a {
 }
 
 .hero-content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,15 +132,18 @@ section {
 
 /* PROJECT GRID */
 .projects-grid {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 35px;
-  width: 100%;
 }
 
 /* PROJECT CARD */
 .project-card {
   width: 100%;
+  max-width: none;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 18px;
@@ -168,8 +173,8 @@ section {
 
 .project-images img {
   width: 100%;
-  height: auto;
   max-width: 100%;
+  height: auto;
   display: block;
   object-fit: contain;
   object-position: center;
@@ -178,34 +183,67 @@ section {
   border-radius: 12px;
 }
 
-/* LARGE SCREENSHOTS */
+/* SINGLE IMAGE */
 .project-images.single-image {
   grid-template-columns: 1fr;
 }
 
 .project-images.single-image img {
   width: 100%;
+  max-width: 100%;
 }
 
-/* FOR PICKTIME / WIDE SCREENSHOTS */
+/* PICKTIME */
+.picktime-project {
+  width: 100%;
+}
+
 .picktime-project .project-images {
+  width: 100%;
   grid-template-columns: 1fr;
 }
 
 .picktime-project .project-images img {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
+  display: block;
+}
+
+/* FRESHDESK */
+.freshdesk-project {
+  width: 100%;
+}
+
+.freshdesk-project .project-images {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+
+.freshdesk-project .project-images img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* MONDAY.COM */
+.monday-project {
+  width: 100%;
+}
+
 .monday-project .project-images {
+  width: 100%;
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .monday-project .project-images img {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
   object-fit: contain;
 }
 
@@ -263,6 +301,7 @@ footer {
 
 /* TABLET */
 @media (max-width: 800px) {
+
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -289,6 +328,7 @@ footer {
 
 /* PHONE */
 @media (max-width: 600px) {
+
   .navbar {
     padding: 14px 5%;
   }
@@ -310,6 +350,7 @@ footer {
   }
 
   .project-card {
+    width: 100%;
     padding: 18px;
     border-radius: 14px;
   }
@@ -319,16 +360,18 @@ footer {
   }
 
   .project-images {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .project-images img {
     width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  }
+}

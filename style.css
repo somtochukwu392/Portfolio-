@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -51,13 +50,10 @@ img {
   color: #172033;
 }
 
-/* NAVIGATION - TOP RIGHT */
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 28px;
-  margin-left: auto;
 }
 
 .nav-links a:hover {
@@ -169,16 +165,16 @@ section {
   margin-bottom: 25px;
 }
 
-/* PROJECT SCREENSHOTS */
+/* PROJECT SCREENSHOTS
+   This is the important part */
 .project-images {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   align-items: start;
 }
 
-/* NO SCREENSHOT BORDER / EDGE */
 .project-images img {
   width: 100%;
   height: auto;
@@ -186,11 +182,11 @@ section {
   object-fit: contain;
   object-position: center;
   border-radius: 10px;
-  border: none;
-  background: transparent;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
 }
 
-/* ONE LARGE SCREENSHOT */
+/* Projects containing one large screenshot */
 .project-images.single-image {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -200,39 +196,12 @@ section {
   margin: 0 auto;
 }
 
-/* SCREENSHOT CAPTIONS */
+/* Screenshot captions */
 .image-caption {
   margin-top: 8px;
   font-size: 0.85rem;
   color: #64748b;
   text-align: center;
-}
-
-/* UAE PROJECT */
-.project-section {
-  padding: 70px 0;
-}
-
-.project-description {
-  max-width: 900px;
-  margin: 0 auto 20px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.project-tools {
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-.project-image h3 {
-  margin-top: 14px;
-  margin-bottom: 8px;
-}
-
-.project-image p {
-  color: #526071;
-  line-height: 1.6;
 }
 
 /* PROJECT DETAILS */
@@ -327,7 +296,6 @@ footer p {
   .nav-links {
     gap: 12px;
     font-size: 0.85rem;
-    margin-left: auto;
   }
 
   section {
@@ -356,5 +324,4 @@ footer p {
     width: 100%;
     max-height: none;
   }
-}
-
+  }
